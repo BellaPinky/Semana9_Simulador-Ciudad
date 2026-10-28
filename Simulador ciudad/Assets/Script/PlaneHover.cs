@@ -1,8 +1,10 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using static BuildBehaviour;
 
-public class PlanosHover : MonoBehaviour
+public class PlaneHover : MonoBehaviour
 {
+    
     public Camera camara;
     public LayerMask capaPlanos; // Asigna la capa de los planos en el Inspector
 
@@ -56,6 +58,7 @@ public class PlanosHover : MonoBehaviour
         {
             //FindAnyObjectByType<CreatorHelper>().CreateBuild();
             planoActual.GetComponent<PlaneBehaviour>().CreateBuild();
+           
 
         }
     }
